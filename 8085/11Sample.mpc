@@ -1,0 +1,78 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 START: LXI SP 5000h
+\par LXI H 6000h
+\par MOV A M
+\par CALL PWRTEN
+\par HLT
+\par 
+\par PWRTEN: LXI H 7000h
+\par MVI B 64h
+\par CALL BINBCD
+\par MVI B 0Ah
+\par CALL BINBCD
+\par MOV M A
+\par RET
+\par 
+\par BINBCD: MVI M FFh
+\par NXTBUF: INR M
+\par SUB B
+\par JNC NXTBUF
+\par ADD B
+\par INX H
+\par RET
+\par \cf0 
+\par }
+<End Codes>
+15
+1| 6000| FF
+3| 7000| 00
+4| 7001| 00
+5| 7002| 00
+7| 4FFC| 00
+8| 4FFD| 00
+9| 4FFE| 00
+10| 4FFF| 00
+<End UserData>
+88
+1| 8000| 31
+2| 8001| 00
+3| 8002| 50
+4| 8003| 21
+5| 8004| 00
+6| 8005| 60
+7| 8006| 7E
+8| 8007| CD
+9| 8008| 0B
+10| 8009| 80
+11| 800A| 76
+12| 800B| 21
+13| 800C| 00
+14| 800D| 70
+15| 800E| 06
+16| 800F| 64
+17| 8010| CD
+18| 8011| 1A
+19| 8012| 80
+20| 8013| 06
+21| 8014| 0A
+22| 8015| CD
+23| 8016| 1A
+24| 8017| 80
+25| 8018| 77
+26| 8019| C9
+27| 801A| 36
+28| 801B| FF
+29| 801C| 34
+30| 801D| 90
+31| 801E| D2
+32| 801F| 1C
+33| 8020| 80
+34| 8021| 80
+35| 8022| 23
+36| 8023| C9
+<End HexData>
+Binary-to-BCD Conversion.
+
+<End Comment>

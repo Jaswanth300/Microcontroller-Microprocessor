@@ -1,0 +1,76 @@
+9000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 START: LXI H 2050h
+\par COUNTER: MVI C 08h
+\par STOREHIGH: MOV D M
+\par STORELOW: MOV E M\cf0 
+\par \cf1 NXTBYT: MOV A M
+\par \cf0 
+\par \cf1 HIGH: CMP D\cf0 
+\par \cf1 JC LOW\cf0 
+\par \cf1 MOV D A
+\par \cf0 
+\par \cf1 LOW: CMP E
+\par JNC NEXT
+\par MOV E A
+\par 
+\par NEXT: INX H\cf0 
+\par \cf1 DCR C\cf0 
+\par \cf1 JNZ NXTBYT\cf0 
+\par 
+\par \cf1 MOV A D\cf0 
+\par \cf1 DISPLAYHIGH: OUT 00h\cf0 
+\par \cf1 MOV A E\cf0 
+\par \cf1 DISPLAYLOW: OUT 01h\cf0 
+\par \cf1 HLT\cf0 
+\par 
+\par 
+\par }
+<End Codes>
+20
+1| 2050| 48
+2| 2051| 32
+3| 2052| F2
+4| 2053| 38
+5| 2054| 37
+6| 2055| 40
+7| 2056| 82
+8| 2057| 8A
+<End UserData>
+169
+1| 9000| 21
+2| 9001| 50
+3| 9002| 20
+4| 9003| 0E
+5| 9004| 08
+6| 9005| 56
+7| 9006| 5E
+8| 9007| 7E
+9| 9008| BA
+10| 9009| DA
+11| 900A| 0D
+12| 900B| 90
+13| 900C| 57
+14| 900D| BB
+15| 900E| D2
+16| 900F| 12
+17| 9010| 90
+18| 9011| 5F
+19| 9012| 23
+20| 9013| 0D
+21| 9014| C2
+22| 9015| 07
+23| 9016| 90
+24| 9017| 7A
+25| 9018| D3
+26| 9019| 00
+27| 901A| 7B
+28| 901B| D3
+29| 901C| 01
+30| 901D| 76
+<End HexData>
+A set of 10 readings are stored from 2050h. Find the Largest and Smallest reading among them and display at port1 and port2 respectively.
+
+
+<End Comment>

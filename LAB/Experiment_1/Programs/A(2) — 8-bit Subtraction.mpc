@@ -1,0 +1,60 @@
+4100
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 
+\par LXI SP 5000h
+\par LDA 4501h
+\par MOV B A
+\par LDA 4500h
+\par SUB B
+\par STA 4505h
+\par PUSH PSW
+\par MVI A 00h
+\par ACI 00h
+\par STA 4506h
+\par POP B
+\par MOV A C
+\par STA 4507h
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 4500| 9C
+2| 4501| 7A
+3| 4505| 22
+4| 4506| 00
+5| 4507| 14
+<End UserData>
+84
+1| 4100| 31
+2| 4101| 00
+3| 4102| 50
+4| 4103| 3A
+5| 4104| 01
+6| 4105| 45
+7| 4106| 47
+8| 4107| 3A
+9| 4108| 00
+10| 4109| 45
+11| 410A| 90
+12| 410B| 32
+13| 410C| 05
+14| 410D| 45
+15| 410E| F5
+16| 410F| 3E
+17| 4110| 00
+18| 4111| CE
+19| 4112| 00
+20| 4113| 32
+21| 4114| 06
+22| 4115| 45
+23| 4116| C1
+24| 4117| 79
+25| 4118| 32
+26| 4119| 07
+27| 411A| 45
+28| 411B| 76
+<End HexData>
+
+<End Comment>

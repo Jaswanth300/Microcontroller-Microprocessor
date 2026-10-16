@@ -1,0 +1,184 @@
+{
+  "summary": "Technical Comparison between generic prototypes and authoritative laboratory programs.",
+  "pairs": [
+    {
+      "category": "16-bit Multiplication",
+      "generic_file": "8085-16_bit_Multiplication.mpc",
+      "authoritative_file": "D(1) \u2014 16-bit Multiplication.mpc",
+      "differences": {
+        "start_address": {
+          "generic": "0000",
+          "authoritative": "4400",
+          "compliant_with_spec": "4400H (Authoritative)"
+        },
+        "input_memory": {
+          "generic": "2050H - 2053H",
+          "authoritative": "4530H - 4533H (Inputs: 34H, 12H, 78H, 56H -> X=1234H, Y=5678H)"
+        },
+        "output_memory": {
+          "generic": "2054H - 2057H",
+          "authoritative": "4534H - 4537H (Outputs: 60H, 00H, 26H, 06H -> 06260060H)"
+        },
+        "recommendation": "Preserve both. Use D(1) as the authoritative Experiment 1 lab submission."
+      }
+    },
+    {
+      "category": "16-bit Division",
+      "generic_file": "8085-16_bit_Division.mpc",
+      "authoritative_file": "D(2) \u2014 16-bit Division.mpc",
+      "differences": {
+        "start_address": {
+          "generic": "8000",
+          "authoritative": "442D",
+          "compliant_with_spec": "442DH (Loop at 4437H, Authoritative)"
+        },
+        "input_memory": {
+          "generic": "2050H - 2053H (Sample test data: 5AH, 01H, 0CH, 00H)",
+          "authoritative": "4538H - 453BH (Inputs: 78H, 56H, 34H, 12H -> Dividend=5678H, Divisor=1234H)"
+        },
+        "output_memory": {
+          "generic": "2054H - 2057H",
+          "authoritative": "453CH - 453FH (Quotient: 04H, 00H; Remainder: A8H, 0DH)"
+        },
+        "recommendation": "Preserve both. Use D(2) as the authoritative Experiment 1 lab submission."
+      }
+    }
+  ],
+  "all_files": {
+    "8085-16_bit_Division.mpc": {
+      "start_address": "8000",
+      "sha256": "D875889629B58C86DE44B5A7C9350C0558F7D4FD0FC72797D570FAEEC0BEFB39",
+      "user_data": {
+        "2050": "5A",
+        "2051": "01",
+        "2052": "0C",
+        "2053": "00",
+        "2054": "1C",
+        "2055": "00"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d LDA 2050h",
+        "MOV E A",
+        "LDA 2051h",
+        "MOV D A",
+        "LDA 2052h"
+      ]
+    },
+    "8085-16_bit_Multiplication.mpc": {
+      "start_address": "0000",
+      "sha256": "21C8749CB4BD2A2A735D7E74E34F7CCFF45910E111606E6A87D23A01321B0CF7",
+      "user_data": {
+        "2050": "34",
+        "2051": "12",
+        "2052": "78",
+        "2053": "56",
+        "2054": "60",
+        "2055": "00",
+        "2056": "26",
+        "2057": "06"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d",
+        "LDA 2050h",
+        "MOV B A",
+        "LDA 2051h",
+        "MOV C A"
+      ]
+    },
+    "B(1) \u2014 16-bit Addition.mpc": {
+      "start_address": "4200",
+      "sha256": "93BB5464FC353C84C52C4A6302D7659899ABBA20DD2ADB15D159D8DCE02275F4",
+      "user_data": {
+        "4510": "34",
+        "4511": "12",
+        "4512": "78",
+        "4513": "56",
+        "4514": "AC",
+        "4515": "68",
+        "4516": "00",
+        "4517": "00",
+        "4518": "00",
+        "4519": "00"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d",
+        "LXI H 4510h",
+        "MOV E M",
+        "INX H",
+        "MOV D M"
+      ]
+    },
+    "B(1) \u2014 16-bit Subtraction.mpc": {
+      "start_address": "4200",
+      "sha256": "8407CD0E2E4A1095812ECFF59175B86AEEEA0AE434F0086F20717001EB5FCB9F",
+      "user_data": {
+        "4510": "34",
+        "4511": "12",
+        "4512": "78",
+        "4513": "56",
+        "4514": "00",
+        "4515": "00",
+        "4516": "00",
+        "4517": "00",
+        "4518": "BC",
+        "4519": "BB",
+        "451A": "01"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d",
+        "LDA 4512h",
+        "MOV B A",
+        "LDA 4510h",
+        "SUB B"
+      ]
+    },
+    "D(1) \u2014 16-bit Multiplication.mpc": {
+      "start_address": "4400",
+      "sha256": "5F5D93DEC41F961FFC815465BB240C4BC0D3D5627013D20F1CD2A37867B12F2A",
+      "user_data": {
+        "4530": "34",
+        "4531": "12",
+        "4532": "78",
+        "4533": "56",
+        "4534": "60",
+        "4535": "00",
+        "4536": "26",
+        "4537": "06"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d",
+        "MVI A 00h",
+        "STA 4534h",
+        "STA 4535h",
+        "STA 4536h"
+      ]
+    },
+    "D(2) \u2014 16-bit Division.mpc": {
+      "start_address": "442D",
+      "sha256": "BE76DFD1D02A3CC951EABFF686D89257A934D90011D02ED9923CD08E5EE74FA8",
+      "user_data": {
+        "4538": "78",
+        "4539": "56",
+        "453A": "34",
+        "453B": "12",
+        "453C": "04",
+        "453D": "00",
+        "453E": "A8",
+        "453F": "0D"
+      },
+      "code_sample": [
+        "Courier New;\n ;;",
+        "d",
+        "LHLD 453Ah",
+        "XCHG",
+        "LHLD 4538h",
+        "LXI B 0000h"
+      ]
+    }
+  }
+}

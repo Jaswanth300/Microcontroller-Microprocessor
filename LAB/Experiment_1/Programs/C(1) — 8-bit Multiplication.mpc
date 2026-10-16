@@ -1,0 +1,58 @@
+4300
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 
+\par LDA 4520h
+\par MOV E A
+\par MVI D 00h
+\par LDA 4521h
+\par MOV C A
+\par LXI H 0000h
+\par MOV A C
+\par ORA A
+\par JZ DONE
+\par LOOP: DAD D
+\par DCR C
+\par JNZ LOOP
+\par DONE: SHLD 4522h
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 4520| 12
+2| 4521| 05
+3| 4522| 5A
+4| 4523| 00
+<End UserData>
+81
+1| 4300| 3A
+2| 4301| 20
+3| 4302| 45
+4| 4303| 5F
+5| 4304| 16
+6| 4305| 00
+7| 4306| 3A
+8| 4307| 21
+9| 4308| 45
+10| 4309| 4F
+11| 430A| 21
+12| 430B| 00
+13| 430C| 00
+14| 430D| 79
+15| 430E| B7
+16| 430F| CA
+17| 4310| 17
+18| 4311| 43
+19| 4312| 19
+20| 4313| 0D
+21| 4314| C2
+22| 4315| 12
+23| 4316| 43
+24| 4317| 22
+25| 4318| 22
+26| 4319| 45
+27| 431A| 76
+<End HexData>
+
+<End Comment>

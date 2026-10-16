@@ -1,0 +1,131 @@
+0000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 START: LXI SP 5500h\cf0 
+\par \cf1 LXI H 2050h\cf0 
+\par \cf1 MVI C 0Ch\cf0 
+\par \cf1 XRA A
+\par MOV B A\cf0 
+\par 
+\par \cf1 NXTBCD: CALL BCDADD\cf0 
+\par \cf1 INX H\cf0 
+\par \cf1 DCR C\cf0 
+\par \cf1 JNZ NXTBCD\cf0 
+\par \cf1 LXI H 2063h\cf0 
+\par \cf1 CALL UNPACK\cf0 
+\par \cf1 MOV A B\cf0 
+\par \cf1 CALL UNPACK\cf0 
+\par \cf1 HLT\cf0 
+\par \cf1 
+\par BCDADD: ADD M
+\par DAA\cf0 
+\par \cf1 RNC
+\par MOV D A\cf0 
+\par \cf1 MOV A B\cf0 
+\par \cf1 ADI 01h\cf0 
+\par \cf1 DAA\cf0 
+\par \cf1 MOV B A\cf0 
+\par \cf1 MOV A D\cf0 
+\par \cf1 RET\cf0 
+\par 
+\par \cf1 UNPACK: MOV D A\cf0 
+\par \cf1 ANI 0Fh\cf0 
+\par \cf1 MOV M A\cf0 
+\par \cf1 DCX H\cf0 
+\par \cf1 MOV A D\cf0 
+\par \cf1 ANI F0h\cf0 
+\par \cf1 RRC\cf0 
+\par \cf1 RRC\cf0 
+\par \cf1 RRC\cf0 
+\par \cf1 RRC\cf0 
+\par \cf1 MOV M A\cf0 
+\par \cf1 DCX H\cf0 
+\par \cf1 RET\cf0 
+\par 
+\par 
+\par }
+<End Codes>
+67
+1| 2050| 78
+2| 2051| 90
+3| 2052| 87
+4| 2053| 99
+5| 2054| 10
+6| 2055| 99
+7| 2056| 90
+8| 2057| 87
+9| 2058| 12
+10| 2059| 99
+11| 205A| 99
+12| 205B| 98
+14| 2060| 00
+15| 2061| 09
+16| 2062| 04
+17| 2063| 08
+<End UserData>
+776
+1| 0000| 31
+2| 0001| 00
+3| 0002| 55
+4| 0003| 21
+5| 0004| 50
+6| 0005| 20
+7| 0006| 0E
+8| 0007| 0C
+9| 0008| AF
+10| 0009| 47
+11| 000A| CD
+12| 000B| 1D
+13| 000C| 00
+14| 000D| 23
+15| 000E| 0D
+16| 000F| C2
+17| 0010| 0A
+18| 0011| 00
+19| 0012| 21
+20| 0013| 63
+21| 0014| 20
+22| 0015| CD
+23| 0016| 28
+24| 0017| 00
+25| 0018| 78
+26| 0019| CD
+27| 001A| 28
+28| 001B| 00
+29| 001C| 76
+30| 001D| 86
+31| 001E| 27
+32| 001F| D0
+33| 0020| 57
+34| 0021| 78
+35| 0022| C6
+36| 0023| 01
+37| 0024| 27
+38| 0025| 47
+39| 0026| 7A
+40| 0027| C9
+41| 0028| 57
+42| 0029| E6
+43| 002A| 0F
+44| 002B| 77
+45| 002C| 2B
+46| 002D| 7A
+47| 002E| E6
+48| 002F| F0
+49| 0030| 0F
+50| 0031| 0F
+51| 0032| 0F
+52| 0033| 0F
+53| 0034| 77
+54| 0035| 2B
+55| 0036| C9
+<End HexData>
+
+
+
+
+
+
+
+
+<End Comment>

@@ -1,0 +1,68 @@
+0000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 START: LXI H 5050h
+\par MVI D 00h
+\par MVI C 02h
+\par 
+\par CHECK: MOV A M
+\par INX H
+\par CMP M
+\par JC NXTBYT
+\par MOV B M
+\par MOV M A
+\par DCX H
+\par MOV M B
+\par INX H
+\par MVI D 01h
+\par NXTBYT: DCR C
+\par JNZ CHECK
+\par MOV A D
+\par RRC
+\par JC START
+\par 
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 5050| D4
+2| 5051| 79
+3| 5052| 02
+<End UserData>
+42
+1| 0000| 21
+2| 0001| 50
+3| 0002| 50
+4| 0003| 16
+5| 0004| 00
+6| 0005| 0E
+7| 0006| 02
+8| 0007| 7E
+9| 0008| 23
+10| 0009| BE
+11| 000A| DA
+12| 000B| 14
+13| 000C| 00
+14| 000D| 46
+15| 000E| 77
+16| 000F| 2B
+17| 0010| 70
+18| 0011| 23
+19| 0012| 16
+20| 0013| 01
+21| 0014| 0D
+22| 0015| C2
+23| 0016| 07
+24| 0017| 00
+25| 0018| 7A
+26| 0019| 0F
+27| 001A| DA
+28| 001B| 00
+29| 001C| 00
+30| 001D| 76
+<End HexData>
+Problem: A set of three readings is stored in memory starting at XX50h. Sort the readings in ascending order.
+
+
+<End Comment>

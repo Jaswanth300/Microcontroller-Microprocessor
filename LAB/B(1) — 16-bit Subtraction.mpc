@@ -1,0 +1,71 @@
+4200
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 
+\par LDA 4512h
+\par MOV B A
+\par LDA 4510h
+\par SUB B
+\par STA 4518h
+\par LDA 4513h
+\par MOV B A
+\par LDA 4511h
+\par SBB B
+\par STA 4519h
+\par MVI A 00h
+\par JNC NOBORROW
+\par INR A
+\par NOBORROW: STA 451Ah
+\par HLT
+\par 
+\par }
+<End Codes>
+15
+1| 4510| 34
+2| 4511| 12
+3| 4512| 78
+4| 4513| 56
+5| 4514| 00
+6| 4515| 00
+7| 4516| 00
+8| 4517| 00
+9| 4518| BC
+10| 4519| BB
+11| 451A| 01
+<End UserData>
+176
+1| 4200| 3A
+2| 4201| 12
+3| 4202| 45
+4| 4203| 47
+5| 4204| 3A
+6| 4205| 10
+7| 4206| 45
+8| 4207| 90
+9| 4208| 32
+10| 4209| 18
+11| 420A| 45
+12| 420B| 3A
+13| 420C| 13
+14| 420D| 45
+15| 420E| 47
+16| 420F| 3A
+17| 4210| 11
+18| 4211| 45
+19| 4212| 98
+20| 4213| 32
+21| 4214| 19
+22| 4215| 45
+23| 4216| 3E
+24| 4217| 00
+25| 4218| D2
+26| 4219| 1C
+27| 421A| 42
+28| 421B| 3C
+29| 421C| 32
+30| 421D| 1A
+31| 421E| 45
+32| 421F| 76
+<End HexData>
+
+<End Comment>

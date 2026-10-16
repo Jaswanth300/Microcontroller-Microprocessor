@@ -1,0 +1,45 @@
+3000
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 6070h
+\par MVI C 0Ah
+\par SHOW: MOV A M
+\par OUT 03h
+\par INX H
+\par DCR C
+\par JNZ SHOW
+\par HLT\cf0 
+\par }
+<End Codes>
+20
+1| 6070| 3F
+2| 6071| 06
+3| 6072| 5B
+4| 6073| 4F
+5| 6074| 66
+6| 6075| 6D
+7| 6076| 7D
+8| 6077| 07
+9| 6078| 7F
+10| 6079| 6F
+11| 607A| 00
+<End UserData>
+20
+1| 3000| 21
+2| 3001| 70
+3| 3002| 60
+4| 3003| 0E
+5| 3004| 0A
+6| 3005| 7E
+7| 3006| D3
+8| 3007| 03
+9| 3008| 23
+10| 3009| 0D
+11| 300A| C2
+12| 300B| 05
+13| 300C| 30
+14| 300D| 76
+<End HexData>
+BCD to Seven Segment Display . (note: make sure to keep display Active HIGH and set clock frequency  at 30Hz.)
+
+<End Comment>

@@ -1,0 +1,73 @@
+442D
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 
+\par LHLD 453Ah
+\par XCHG
+\par LHLD 4538h
+\par LXI B 0000h
+\par DLOOP: MOV A L
+\par SUB E
+\par MOV L A
+\par MOV A H
+\par SBB D
+\par MOV H A
+\par JC DONE
+\par INX B
+\par JMP DLOOP
+\par DONE: DAD D
+\par SHLD 453Eh
+\par MOV H B
+\par MOV L C
+\par SHLD 453Ch
+\par HLT
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 4538| 78
+2| 4539| 56
+3| 453A| 34
+4| 453B| 12
+5| 453C| 04
+6| 453D| 00
+7| 453E| A8
+8| 453F| 0D
+<End UserData>
+34
+1| 442D| 2A
+2| 442E| 3A
+3| 442F| 45
+4| 4430| EB
+5| 4431| 2A
+6| 4432| 38
+7| 4433| 45
+8| 4434| 01
+9| 4435| 00
+10| 4436| 00
+11| 4437| 7D
+12| 4438| 93
+13| 4439| 6F
+14| 443A| 7C
+15| 443B| 9A
+16| 443C| 67
+17| 443D| DA
+18| 443E| 44
+19| 443F| 44
+20| 4440| 03
+21| 4441| C3
+22| 4442| 37
+23| 4443| 44
+24| 4444| 19
+25| 4445| 22
+26| 4446| 3E
+27| 4447| 45
+28| 4448| 60
+29| 4449| 69
+30| 444A| 22
+31| 444B| 3C
+32| 444C| 45
+33| 444D| 76
+<End HexData>
+
+<End Comment>
