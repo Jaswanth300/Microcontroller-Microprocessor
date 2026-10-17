@@ -47,3 +47,28 @@ Desktop.ini
 scratch/
 scratch_*/
 .system_generated/
+
+# Local Backups
+*.bak
+*.bak_*
+Backups/
+**/Backups/
+
+# Experiment Internal Evidence Archive & Temporary Verification Images
+**/Evidence/Archive/
+*_visual_check.png
+*.duplicate.png
+
+# Experiment Draft & Working Report Copies
+*_Draft.docx
+*_draft.docx
+
+# Experiment Development Scripts & Validation Logs (Internal Utilities)
+LAB/Experiment_1/Scripts/
+LAB/Experiment_1/Logs/
+# Keep Experiment 1 development files local
+LAB/Experiment_1/Scripts/
+LAB/Experiment_1/Logs/
+LAB/Experiment_1/Reports/
+LAB/Experiment_1/Evidence/Archive/
+LAB/Experiment_1_8085_Arithmetic_Operations_Final.docx
