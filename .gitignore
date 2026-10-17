@@ -72,3 +72,6 @@ LAB/Experiment_1/Logs/
 LAB/Experiment_1/Reports/
 LAB/Experiment_1/Evidence/Archive/
 LAB/Experiment_1_8085_Arithmetic_Operations_Final.docx
+# Local simulator folders — not part of lab submission
+/8085/
+/8086/
