@@ -1,4 +1,11 @@
-# Experiment 1: 8-Bit and 16-Bit Arithmetic Operations (Intel 8085)
+# ECA1011 — Microprocessors and Microcontrollers
+
+**Student Name:** Naga Jaswanth B  
+**Register Number:** 192424300  
+**Experiment:** 1 — 8-Bit and 16-Bit Arithmetic Operations Using the Intel 8085 Microprocessor
+
+---
+
 
 ## 1. Overview & Objective
 
