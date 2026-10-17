@@ -1,52 +1,67 @@
-# Microprocessors and Microcontrollers (MPMC) Laboratory
+# ECA1011 — Microprocessors and Microcontrollers
 
-This repository contains academic coursework, assembly language implementations, simulation evidence, automated validation suites, and laboratory reports for the **Microprocessors and Microcontrollers (MPMC)** course.
+**Student Name:** Naga Jaswanth B  
+**Register Number:** 192424300  
+**Course Code:** ECA1011  
+**Course Title:** Microprocessors and Microcontrollers  
+**Repository:** Microcontroller-Microprocessor Laboratory
 
-## Course Information
-* **Subject**: Microprocessors and Microcontrollers (MPMC)
-* **Author / Student**: Jaswanth (`Jaswanth300`)
-* **Target Architectures**: Intel 8085 (8-bit) & Intel 8086 (16-bit)
+## About This Repository
 
----
+This repository contains coursework and laboratory submission materials for **ECA1011 — Microprocessors and Microcontrollers**. It is organized to make the laboratory experiment files, program source code, execution evidence, and final report easy to locate.
+
+The current submission documented here is **Experiment 1: 8-Bit and 16-Bit Arithmetic Operations Using the Intel 8085 Microprocessor**.
+
+## Experiment 1
+
+The experiment covers eight arithmetic routines implemented in Intel 8085 assembly language:
+
+| ID | Operation | Operand size |
+|---|---|---|
+| A(1) | Addition | 8-bit |
+| A(2) | Subtraction | 8-bit |
+| B(1) | Addition | 16-bit |
+| B(2) | Subtraction | 16-bit |
+| C(1) | Multiplication | 8-bit |
+| C(2) | Division | 8-bit |
+| D(1) | Multiplication | 16-bit |
+| D(2) | Division | 16-bit |
+
+Programs, simulator screenshots, and the final report are grouped in the experiment folder.
 
 ## Repository Structure
 
 ```text
-MPMC/
-├── .gitignore                                # Coursework ignore configuration
-├── README.md                                 # Top-level course overview
-├── 8085/                                     # Intel 8085 sample assembly programs (.mpc)
-│   ├── 01Sample.mpc ... 11Sample.mpc
-│   └── FGMJJHJKL.mpc
-├── 8086/                                     # Intel 8086 assembly coursework
-│   └── FACTORIAL OF A NUMBER.docx
-└── LAB/                                      # Laboratory Experiments
-    ├── Experiment_1_8085_Arithmetic_Operations_Final.docx  # Final Experiment 1 Report
-    ├── Experiment_1_8085_Arithmetic_Operations_Draft.docx  # Baseline draft report
-    ├── 8085-16_bit_Multiplication.mpc        # 16-bit multiplication prototype
-    ├── 8085-16_bit_Division.mpc              # 16-bit division prototype
-    ├── B(1) — 16-bit Addition.mpc            # 16-bit addition program (4200H)
-    ├── B(1) — 16-bit Subtraction.mpc         # 16-bit subtraction program (4200H)
-    ├── D(1) — 16-bit Multiplication.mpc     # 16-bit multiplication program (4400H)
-    ├── D(2) — 16-bit Division.mpc           # 16-bit division program (442DH)
-    └── Experiment_1/                         # Structured Experiment 1 Deliverables
-        ├── Evidence/                         # Genuine simulator execution screenshots
-        ├── Logs/                             # Integrity manifests & validation summaries
-        ├── Programs/                         # All 8 verified .mpc programs (A1–D2)
-        ├── Reports/                          # Final DOCX report
-        ├── Scripts/                          # Safe CLI automation & validation utilities
-        └── README.md                         # Detailed Experiment 1 documentation
+Microcontroller-Microprocessor/
+├── .gitignore
+├── README.md
+└── LAB/
+    └── Experiment_1/
+        ├── Programs/                                  # Eight 8085 .mpc programs
+        ├── Evidence/                                  # Execution screenshots
+        ├── Experiment_1_8085_Arithmetic_Operations_Final.docx
+        └── README.md                                  # Experiment details and result matrix
 ```
+
+> The local `8085` and `8086` simulator/sample folders are intentionally not included in this public repository because they are not part of the laboratory submission.
+
+## Simulation Environment
+
+- **Processor:** Intel 8085
+- **Simulator:** Microprocessor 8085 Simulator Software Kit 1.0
+- **Program format:** `.mpc`
+- **Evidence:** Screenshots captured from program execution in the simulator
+
+## Final Report
+
+The final laboratory report is available here:
+
+[**Experiment 1 — 8085 Arithmetic Operations (DOCX)**](LAB/Experiment_1/Experiment_1_8085_Arithmetic_Operations_Final.docx)
+
+For the program inventory, memory addresses, test values, expected outputs, and detailed experiment notes, see the [Experiment 1 README](LAB/Experiment_1/README.md).
 
 ---
 
-## Experiments
-
-### Experiment 1: 8-Bit and 16-Bit Arithmetic Operations (Intel 8085)
-Complete development, simulation, verification, and documentation of all eight arithmetic modules:
-* **Section A (4100H)**: 8-Bit Addition & Subtraction with carry, borrow, and PSW flag register storage.
-* **Section B (4200H)**: 16-Bit Addition & Subtraction with carry and borrow verification.
-* **Section C (4300H)**: 8-Bit Multiplication (repeated addition) & Division (repeated subtraction).
-* **Section D (4400H / 442DH)**: 16-Bit Multiplication (32-bit product) & 16-Bit Division.
-
-See [LAB/Experiment_1/README.md](LAB/Experiment_1/README.md) for full instructions, memory tables, and verification commands.
+**Submitted by:** Naga Jaswanth B  
+**Register Number:** 192424300  
+**Course:** ECA1011 — Microprocessors and Microcontrollers
