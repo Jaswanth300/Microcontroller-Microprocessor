@@ -1,0 +1,4 @@
+; 16-bit multiplication
+LHLD 4530H
+SHLD 4534H
+HLT
