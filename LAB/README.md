@@ -10,7 +10,7 @@
 ## 📑 Quick Navigation
 
 ### 📄 Master Consolidated Laboratory Record
-The complete, all-in-one laboratory record encompassing all 7 experiments with formal title page, index, theory, flowcharts, commented source listings, verified memory tables, and high-resolution simulator evidence:
+The complete, all-in-one laboratory record encompassing all 11 experiments with formal title page, index, theory, flowcharts, commented source listings, verified memory tables, and high-resolution simulator evidence:
 - 📥 [**MPMC_All_Experiments_Consolidated_192424300.docx**](MPMC_All_Experiments_Consolidated_192424300.docx)
 
 ---
@@ -26,11 +26,15 @@ The complete, all-in-one laboratory record encompassing all 7 experiments with f
 | **05** | Intel 8086 | Factorial Calculation, Squaring Subroutines, Array Min/Max | [Experiment_5/](Experiment_5/) | [Download Report](Experiment_5/Reports/Experiment_5_Factorial,_Square,_Branch_and.docx) |
 | **06** | Intel 8086 | IVT Configuration (`INT 40H`), NMI Setup & Interrupt Masking | [Experiment_6/](Experiment_6/) | [Download Report](Experiment_6/Reports/Experiment_6_Interrupt_Handling_and_Device.docx) |
 | **07** | 8086 / 8087 FPU | IEEE 754 Floating-Point Arithmetic, Circle Area & `FSQRT` | [Experiment_7/](Experiment_7/) | [Download Report](Experiment_7/Reports/Experiment_7_Arithmetic_coprocessor_and_Flo.docx) |
+| **11** | 8086 / 8251 / 8253 | Serial Communication between 8086 and PC using 8251 USART & 8253 Timer | [Experiment_11/](Experiment_11/) | [Download Report](Experiment_11/Reports/Experiment_11_Report.docx) |
+| **13** | Intel 8051 | 8051 Arithmetic, Logical and Bit-Manipulation Programming Using Keil | [Experiment_13/](Experiment_13/) | [Download Report](Experiment_13/Reports/Experiment_13_Report.docx) |
+| **14** | Intel 8051 | 8051 Block Transfer, Multi-byte Addition, Register Banks & Lookup Table | [Experiment_14/](Experiment_14/) | [Download Report](Experiment_14/Reports/Experiment_14_Report.docx) |
+| **18** | PIC18F45K22 | Multi-Floor Elevator Controller Design & Simulation in Proteus | [Experiment_18/](Experiment_18/) | [Download Report](Experiment_18/Reports/Experiment_18_Report.docx) |
 
 ---
 
 Each experiment folder contains:
-- **`Programs/`**: Standalone source files in assembly format (`.asm` / `.mpc`).
+- **`Programs/`**: Standalone source files in assembly / C format (`.asm` / `.mpc` / `.c`).
 - **`Evidence/`**: High-resolution simulator screenshots verifying memory cells, registers, and flags.
 - **`Reports/`**: Formatted Microsoft Word submission document.
 - **`README.md`**: Technical specification, memory map, and instruction breakdown.
